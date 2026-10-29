@@ -1,0 +1,19 @@
+SESSION13
+[MINI PROJECT] HỆ THỐNG QUẢN TRỊ HẠ TẦNG & NHẬT KÝ KỸ THUẬT
+
+Tên lớp: HCM K26 CNTT2
+Môn học: Nhập môn công nghệ thông tin
+Họ và tên: LƯƠNG THANH THƯ
+
+
+
+Mục tiêu: Em đóng vai kỹ sư hạ tầng của startup GreenTech. Em cần quản lý file log của máy chủ và danh sách phần cứng của 100 trạm cảm biến.
+Module 1 (Terminal): Em dùng 1 lệnh mkdir để tạo cả cây thư mục greentech-system gồm docs, scripts, data, backup. Sau đó em dùng đường dẫn tương đối để vào thư mục và tạo file .env bằng echo.
+Module 2 (Script): Em viết file auto_report.bat. File này dùng echo để in tiêu đề báo cáo. Sau đó dùng findstr để lọc các dòng “CRITICAL” và “ERROR” trong file log, rồi dùng >> để nối kết quả vào backup/bao-cao-su-co.txt. Cách này đọc từng dòng nên file 500MB không làm tràn RAM.
+Module 3 (Tài liệu): Em viết README.md bằng Markdown gồm tiêu đề H1, code block, task list và bảng thông số. Em cũng làm file SRS trên Word, gán Heading 1-2-3 và chèn mục lục tự động ở trang đầu.
+Module 4 (Excel): Em dùng VLOOKUP có $ và FALSE để tự điền ten_thiet_bi dựa trên ma_linh_kien. Em dùng thêm TRIM để bỏ khoảng trắng thừa, tránh lỗi #N/A.
+Những lỗi cần tránh:
+Tên thư mục không dùng tiếng Việt có dấu hoặc khoảng trắng.
+Em phải kiểm tra lại script, không chạy bừa lệnh xóa nguy hiểm như del /f /s /q do AI gợi ý.
+Excel không để hàng trống hoặc gộp ô.
+Tốc độ mạng Mbps phải chia 8 để ra MB/s. Ví dụ 100 Mbps là 12,5 MB/s, nên tải file 500MB mất khoảng 40 giây.
